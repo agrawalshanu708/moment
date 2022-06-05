@@ -2,6 +2,7 @@ import "./App.css";
 import { Onboard } from "./Screens/index";
 import { useState } from "react";
 import { useBackgroundImage } from "./hooks/useBackgroundImage";
+import { Main } from "./Screens/Main/Main";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -20,6 +21,7 @@ function App() {
           setRoute={setRoute}
         />
       )}
+      {route === "main" && <Main/>}
     </div>
   );
 }
