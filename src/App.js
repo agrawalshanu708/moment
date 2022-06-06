@@ -12,7 +12,10 @@ function App() {
   return (
     <div
       className="App"
-      style={{ background: `url(${bgURL}) center center/cover no-repeat` }}
+      style={{
+        background: `url(${bgURL}) center center/cover no-repeat`,
+        opacity: "0.7",
+      }}
     >
       {route === "onboard" && (
         <Onboard
@@ -21,7 +24,7 @@ function App() {
           setRoute={setRoute}
         />
       )}
-      {route === "main" && <Main/>}
+      {route === "main" && <Main />}
     </div>
   );
 }

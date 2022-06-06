@@ -46,7 +46,7 @@
 .onboard-input{
     outline: 0;
     border: 0;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
     text-align: center;
     font-size: 2rem;
     color: var(--primary-color);
