@@ -25,10 +25,30 @@
     cursor: pointer;
 }
 
-.task-dropdown{
-   display: none;
+.task-dropdown-hidden{
+   visibility: hidden;
    
 }
 .task-dropdown-show{
-display:block ;
+    visibility:visible; ;
+}
+.task__done__icon{
+    font-size: 2.5rem;
+}
+.task__done__text{
+    text-decoration: line-through;
+}
+
+.task__undone__icon{
+    font-size: 1.5rem;
+
+}
+.onboard-input{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0);
 }

@@ -1,5 +1,8 @@
 import React, { useState,useEffect } from "react";
 import axios from "axios"
+import "./Quote.css"
+import { FiSettings } from "react-icons/fi";
+import { Todo } from "../Todo/Todo";
  const Quote = () => {
   const [quote, setQuote] = useState({ title: "", author: "" });
 
@@ -23,9 +26,17 @@ import axios from "axios"
     fetchQuote();
   }, []);
   return (
+    <div className="footer flex-jc-sb ">
+      <div>
+        <FiSettings/>
+      </div>
     <div className="Quote flex-center flex-col">
       <span className="quote-title">"{quote.title}"</span>
       <span className="quote-author">- {quote.author}</span>
+    </div>
+    <div className="todo">
+     <Todo/>
+    </div>
     </div>
   );
 };
