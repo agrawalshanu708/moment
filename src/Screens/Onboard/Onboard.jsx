@@ -1,7 +1,7 @@
 import React from "react";
-import "./Onboard.css"
+import "./Onboard.css";
 
-const Onboard = ({setUserName,userName,setRoute}) => {
+const Onboard = ({ setUserName, userName, setRoute }) => {
   const userNameHandler = (e) => {
     e.preventDefault();
     setUserName(e.target.value);
@@ -16,7 +16,7 @@ const Onboard = ({setUserName,userName,setRoute}) => {
           <input
             defaultValue={userName}
             type="text"
-            className="onboaring-input"
+            className="onboard-input"
             autoFocus
           />
         </form>

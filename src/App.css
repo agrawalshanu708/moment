@@ -5,8 +5,19 @@
 
 :root {
   --primary-color: #daeaf1;
-}
+  --light-grey: #2c2c2ca4;
 
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding:0
+}
+body{
+  box-sizing: border-box;
+}
+img{
+  object-fit: cover;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -15,14 +26,36 @@
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 input {
   outline: 0;
   border: 0;
-  border-bottom: 1px solid var(--primary-color);
-  text-align: center;
-  font-size: 2rem;
   color: var(--primary-color);
   background: rgba(0, 0, 0, 0);
+}
+.mt{
+  margin-top: 1rem
+}
+.mt-s{
+  margin-top: 5px
+ 
+}
+.flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.flex-jc-sb{
+  display: flex;
+  justify-content: space-between;
+}
+.mr{
+  margin-right: 1rem;
+}
+button{
+  width: fit-content;
+  padding: 0.3rem 0.7rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem
 }

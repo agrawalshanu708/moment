@@ -2,6 +2,7 @@ import "./App.css";
 import { Onboard } from "./Screens/index";
 import { useState } from "react";
 import { useBackgroundImage } from "./hooks/useBackgroundImage";
+import { Main } from "./Screens/Main/Main";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -11,7 +12,10 @@ function App() {
   return (
     <div
       className="App"
-      style={{ background: `url(${bgURL}) center center/cover no-repeat` }}
+      style={{
+        background: `url(${bgURL}) center center/cover no-repeat`,
+        opacity: "0.7",
+      }}
     >
       {route === "onboard" && (
         <Onboard
@@ -20,6 +24,7 @@ function App() {
           setRoute={setRoute}
         />
       )}
+      {route === "main" && <Main userName={userName} />}
     </div>
   );
 }
