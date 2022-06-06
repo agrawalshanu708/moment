@@ -24,7 +24,7 @@ function App() {
           setRoute={setRoute}
         />
       )}
-      {route === "main" && <Main />}
+      {route === "main" && <Main userName={userName} />}
     </div>
   );
 }

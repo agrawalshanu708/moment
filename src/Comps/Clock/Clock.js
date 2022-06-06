@@ -5,7 +5,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { ImCheckboxUnchecked } from "react-icons/im";
 import { TiInputCheckedOutline } from "react-icons/ti";
 
-const Clock = () => {
+const Clock = ({userName}) => {
   const [showTask, setShowTask] = useState(false);
   const [task, setTask] = useState("");
   const [time, setTime] = useState("");
