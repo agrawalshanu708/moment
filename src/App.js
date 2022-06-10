@@ -1,6 +1,6 @@
 import "./App.css";
 import { Onboard } from "./Screens/index";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useBackgroundImage } from "./hooks/useBackgroundImage";
 import { Main } from "./Screens/Main/Main";
 
@@ -8,6 +8,10 @@ function App() {
   const [userName, setUserName] = useState("");
   const [route, setRoute] = useState("onboard");
   const { bgURL } = useBackgroundImage();
+
+  useEffect(() =>{
+    document.title = "Moment"
+  },[])
 
   return (
     <div
