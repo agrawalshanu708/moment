@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Clock, Quote, Weather } from "../../Comps";
-import "./Main.css"
-const Main = () => {
+import "./Main.css";
+const Main = ({ userName }) => {
+  useEffect(() => {
+    localStorage.setItem("username", userName);
+  }, []);
+
   return (
     <div className="main ">
       <div>
-          <Weather/>
+        <Weather />
       </div>
       <div className="flex-center flex-col">
-          <Clock/>
+        <Clock userName={userName} />
       </div>
       <div>
-          <Quote/>
+        <Quote />
       </div>
     </div>
   );

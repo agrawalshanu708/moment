@@ -49,14 +49,23 @@ const Clock = ({userName}) => {
   const taskDone = () => {
     setIsTaskDone(true);
   };
-  useEffect(() => timeFunction());
+
+  useEffect(() => {
+   JSON.parse(localStorage.getItem("focus"));
+  });
+  useEffect(() => {
+    timeFunction()
+   localStorage.setItem("focus", JSON.stringify(task));
+  });
+
+console.log(userName)
   return (
     <div className="">
       <div className="clock flex-center">
         <div className="time">{time}</div>
       </div>
       <div className="greeting flex-center">
-        <div className="greeting">Good {greeting()} shanu</div>
+        <div className="greeting">Good {greeting()} {userName}</div>
       </div>
       {!showTask && (
         <form onSubmit={renderTask} className="enter-task flex-center flex-col">

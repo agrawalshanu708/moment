@@ -14,8 +14,7 @@ function App() {
       className="App"
       style={{
         background: `url(${bgURL}) center center/cover no-repeat`,
-        opacity: "0.7",
-      }}
+        }}
     >
       {route === "onboard" && (
         <Onboard
@@ -24,7 +23,7 @@ function App() {
           setRoute={setRoute}
         />
       )}
-      {route === "main" && <Main userName={userName} />}
+      {route === "main"  && <Main userName={userName} />}
     </div>
   );
 }

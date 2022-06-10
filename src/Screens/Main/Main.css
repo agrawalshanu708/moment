@@ -1,9 +1,7 @@
-.main{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 100vw;
-    height: 100vh;
-}
-.main >div {
-    /* border: 1px solid black */
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: "rgba(0,0,0,0.28)";
 }
