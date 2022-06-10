@@ -4,9 +4,7 @@ Moment, A Tab Extension
 
 - [Moment](https://moment-eight.vercel.app/)
 
-<img width="933" alt="image" src="https://user-images.githubusercontent.com/95335996/172688074-b4b00afd-8792-473c-b5a6-ba0ee1683453.png">
-
-## Pages till now
+<img width="956" alt="image" src="https://user-images.githubusercontent.com/95335996/173062436-8e2c3ec1-4aa2-4722-85a0-989288b93688.png">## Pages till now
 
 - Onboarding page
 - Main page
@@ -35,10 +33,10 @@ Moment, A Tab Extension
 ### Images
 
 <div style = {{display: "flex"}}>
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/95335996/172688615-fa78138d-1599-48fe-89c1-910e6e93d03e.png"> 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/95335996/172688849-191d5580-0eed-4d62-80b6-35975aaaa723.png"> 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/95335996/172689056-9fd3be79-efc4-44a9-ba61-fd0411a3560e.png">  
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/95335996/172689209-f4760a96-4076-4847-a827-08d12d011157.png">
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/95335996/173062278-a36bff34-858a-4772-a308-eba463740268.png">
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/95335996/173062538-b17bbb95-d095-46a9-a202-eeef2e2a54c2.png">
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/95335996/173062664-64aa8739-ffb1-439c-8da6-3b5bfdc79b01.png">
+ 
  </div>
 ## Author
 
